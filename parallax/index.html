@@ -14,11 +14,43 @@
         <script src="js/modernizr-2.7.1.min.js"></script>
 					
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+		<!--<link rel="stylesheet" type="text/css" href="css/catalogo.css" media="screen">-->
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
     </head>
     <body class="cargando">
     <div class="container-fluid" style="background-color:#000;">	
+       	
+       	<!--******CONTENIDO DE BRANCH MENU-->
 
+       	<!-- Inicio navbar -->
+		<header>
+		<nav class="navbar  navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#" onclick="scroll_animado('inicio')">RBLT</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right" style="color:#3EE0F2;">
+		        <li><a href="#" onclick="scroll_animado('quienessomos')">¿Qui&eacute;nes Somos?</a></li>
+		        <li><a href="#" onclick="scroll_animado('catalogo')">Cat&aacute;logo</a></li>    
+		        <li><a href="#" onclick="scroll_animado('contacto')">Contacto</a></li>            
+		      </ul>		     
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		</header>
+		
+		<!--*******FIN DE CONTENIDO BRANCH MENU-->
+
+		<!-- Fin navbar -->
        	<!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->       	
@@ -26,14 +58,14 @@
 	       	<img src="img/img11.jpg">
 	       	<img src="img/img8.jpg">
 	       	<img src="img/bg1.jpg">
-	       	<img src="img/bg2.jpeg">
+	       	<img src="img/bg2.jpEg">
        	</div>
        	<main>       	 
 			<section id="inicio" class="secciones">
 	        	<div class="fondo" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#inicio">
 		        	<div class="contenedor">
 			    		<div class="contenido" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#inicio h2">
-			    			<h2>TEXTO TEXTO TEXTO</h2>
+			    			<h2>TEXTO TEXTO TEXTO</h2>				    		
 			    		</div>
 		        	</div>
 	        	</div>
@@ -43,6 +75,7 @@
 			    	<div class="contenedor">
 			    		<div class="contenido" data-center="opacity: 1" data-center-top="opacity: 0" data--100-bottom="opacity: 0;"	data-anchor-target="#quienessomos">
 				    		<h2>CONTENIDO</h2>
+				    		
 			    		</div>
 			    	</div>
 				</div>
@@ -53,18 +86,17 @@
 			    	<div class="contenedor">						
 						<div class="contenido" data-bottom-top="opacity: 0" data-25p-top="opacity: 0" data-top="opacity: 1" data-anchor-target="#catalogo">
 							<h2>CATALOGO</h2>
-
+						
 			    		</div>
 			    	</div>			    	
 			    </div>
 			</section>
-	 
+		
 			<section id="contacto" class="secciones">				
 				<div class="fondo" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#contacto">
 			    	<div class="contenedor">
 						<div class="contenido" data-bottom-top="opacity: 0" data-25p-top="opacity: 0" data-top="opacity: 1" data-anchor-target="#contacto">	
 							<h2>CONTACTO</h2>			    		
-
 			    		</div>
 			    	</div>			    	
 			    </div>
@@ -84,6 +116,9 @@
         <script src="js/skrollr.js"></script>
         <script src="js/script.js"></script>		
 		<script src="js/bootstrap.min.js"></script>
+
+		<!--******AGREGAR ESTO EN BRANCH DE MENU-->
+		<script type="text/javascript" src="js/transicion.js"></script>
 	</div>	
     </body>
 </html>
