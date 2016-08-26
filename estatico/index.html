@@ -101,6 +101,24 @@
             </div>
         </section>
 
+        <!-- MODAL DE CATALOGO DE PRODUCTOS -->
+        <div class="modal fade" id="modalcatalogo" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background-color:#000; color:white;">
+                    <div class="modal-header" style="color:white;">
+                        <button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close"><span aria-hidden="true">Cerrar &times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Cat&aacute;logo de productos</h4>
+                    </div>
+                    <div class="modal-body" style="color:white;" id="resultcatalogo">                       
+                    </div>
+                    <div class="modal-footer" style="color:white;" id="resultcatalogo">     
+                        <h5 class="text-right"><b>RBLT</b></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN MODAL CATALOGO DE PRODUCTOS -->
+
         <!-- catalogo -->
         <section style="background-color:#E6E6E6" id="catalogo">
             <div class="container-fluid">                
@@ -116,7 +134,7 @@
                             <div class="mask">
                                 <h2>Accesorios</h2>
                                 <p>Los mejores accesorios para lucir espectacular en cualquier momento.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogoaccesorio" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +144,7 @@
                             <div class="mask">
                                 <h2>Chaquetas/Abrigos</h2>
                                 <p>El mejor estilo para esos d&iacute;as de fr&iacute;o o simplemente estilo.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogochaquetas" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +154,7 @@
                             <div class="mask">
                                 <h2>Trajes formales</h2>
                                 <p>La mejor presentaci&oacute;n para esos eventos especiales, siempre luciendo lo mejor.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogotrajesformales" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -149,7 +167,7 @@
                             <div class="mask">
                                 <h2>Pantalones Casuales</h2>
                                 <p>El mejor estilo para enfrentar el d&iacute;a a d&iacute;a en cualquier lugar.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogopantaloncasual" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -159,7 +177,7 @@
                             <div class="mask">
                                 <h2>Ropa Deportiva</h2>
                                 <p>Ejercicio y el mejor estilo en ropa deportiva para ser la diferencia.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogodeportiva" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +187,7 @@
                             <div class="mask">
                                 <h2>Camisas Formales</h2>
                                 <p>El mejor color y calidad en camisas formales para esas ocaciones especiales.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogocamisaformal" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -182,7 +200,7 @@
                             <div class="mask">
                                 <h2>Camisas Casuales</h2>
                                 <p>Camisas para el d&iacute;a a d&iacute;a con el mejor estilo y calidad.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogocamisacasual" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>                          
                     </div>
@@ -192,7 +210,7 @@
                             <div class="mask">
                                 <h2>Camisetas</h2>
                                 <p>El mejor estilo en esos d&iacute;as de calor, para lucir siempre bien.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogocamiseta" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -202,7 +220,7 @@
                             <div class="mask">
                                 <h2>Shorts</h2>
                                 <p>Estilos muy modernos para esos d&iacutea;s de mucho calor.</p>
-                                <a href="#" class="info">Ir al Cat&aacute;logo</a>
+                                <a href="#modalcatalogo" data-toggle='modal' id="catalogoshorts" class="info">Ir al Cat&aacute;logo</a>
                             </div>
                         </div>
                     </div>
@@ -213,7 +231,7 @@
         <br>
         </section>
 
-
+        <script type="text/JavaScript" src="dist/js/loadcatalogo.js"></script>
         <!-- Footer -->
 		<section style="background-color:#000" id="contacto">         
             <div class="container-fluid">
