@@ -71,7 +71,6 @@ main {
 	left: 0;
 }
 
-/*****AGREGAR ESTO EN BRANCH MENU*/
 /*Aqui se modificaron margenes del nav que trae por defecto*/
 nav
 {
@@ -120,8 +119,6 @@ section{
 }
 /*FIN*/
 
-/******HASTA AQUI BRANCH MENU*/
-
 .fondo {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -140,14 +137,14 @@ section{
 
 .contenido {	
 	position: absolute;
-	left: 50%;
+	left: 52%;
 	top: 50%;
 }
 .contenido h2  {
 	color: #fff8de;
 	background-color: rgba(0,0,0,0.5);
 	padding: 10px 5px;
-	font-size: 35px;
+	font-size: 30px;
 	line-height: 38px;
 	margin-bottom: 12px;
 }
@@ -218,6 +215,14 @@ section{
 	padding-right: 0;
 	color: #000;
 }
+
+/****************AGREGAR EN BRANCH DE CONTACTO*/
+/*Formulario de contacto*/
+.miform {
+    background-color: rgba(255,255,255,0.95);
+    padding: 15px;
+    width: 450px;    
+}*/
 
 /* Media Queries para diseño responsive */
 

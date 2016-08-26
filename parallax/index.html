@@ -15,10 +15,11 @@
 					
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/catalogo.css" media="screen">
+
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
     </head>
     <body class="cargando">
-    <div class="container-fluid" style="background-color:#000;">
+    <div class="container-fluid" style="background-color:#000;">	
        	<!-- Inicio navbar -->
 		<header>
 		<nav class="navbar  navbar-fixed-top">
@@ -36,7 +37,7 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right" style="color:#3EE0F2;">
-		        <li><a href="#" onclick="scroll_animado('quienessomos')">&#191;Qui&eacute;nes Somos?</a></li>
+		        <li><a href="#" onclick="scroll_animado('quienessomos')">¿Qui&eacute;nes Somos?</a></li>
 		        <li><a href="#" onclick="scroll_animado('catalogo')">Cat&aacute;logo</a></li>    
 		        <li><a href="#" onclick="scroll_animado('contacto')">Contacto</a></li>            
 		      </ul>		     
@@ -59,7 +60,8 @@
 	        	<div class="fondo" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#inicio">
 		        	<div class="contenedor">
 			    		<div class="contenido" data-center="bottom: 200px; opacity: 1" data-top="bottom: 1200px; opacity: 0" data-anchor-target="#inicio h2">
-			    			<h2>Creadores de la moda moderna y elegante.<br> <p style="text-align:right;">RBLT</p></h2>				    		
+							<h2>Creadores de la moda moderna y elegante.<br> <p style="text-align:right;">RBLT</p></h2>
+
 			    		</div>
 		        	</div>
 	        	</div>
@@ -71,30 +73,46 @@
 				    		<h2>
 				    			<center>
 								<br>
-				    			&#191;QUIENES SOMOS?		    					    			
+				    			¿Quienes somos?			    					    			
 				    			<br>
 								<hr style="border: 3px solid #D65E5E; width: 10%; margin:5px;">
 								</center>
 								<br>
 				    			<p class="informacion">
-								La marca de ropa RBLT fue fundad por Chris Bruun y Paul Katballer en la ciudad de Aarhus, Dinamarca. La misi&oacute;n era &#45; y sigue siendo &#45; crear piezas de ropa casual y f&aacute;cil de utilizar d&iacute;a con d&iacute;a. RBLT es una marca de moda urbana contempor&aacute;nea y es inspirada por la moda deportiva, moda de alta costura, arte, dise&ntilde;o gr&aacute;fico y los ambientes de diversas subculturas. RBLT no es atemporal por lo que constantemente cambiamos nuestros dise&ntilde;os para seguir impulsando la marca &#45; es parte de nuestra pasi&oacute;n crear.
+								La marca de ropa RBLT fue fundad por Chris Bruun y Paul Katballer en la ciudad de Aarhus, Dinamarca. La misión era – y sigue siendo – crear piezas de ropa casual y fácil de utilizar día con día. RBLT es una marca de moda urbana contemporánea y es inspirada por la moda deportiva, moda de alta costura, arte, diseño gráfico y los ambientes de diversas subculturas. RBLT no es atemporal por lo que constantemente cambiamos nuestros diseños para seguir impulsando la marca – es parte de nuestra pasión crear.
 								<br><br>
-								RBLT est&aacute; orientada internacionalmente &#45; pensamos internacionalmente, pero estamos fundados en la tradici&oacute;n de la cultura del dise&ntilde;o dan&eacute;s. Esto se ve reflejado en nuestro proceso de dise&ntilde;o y en nuestro concepto, as&iacute; como en nuestro internacional enfoque de negocios. Hoy en d&iacute;a RBLT est&aacute; representada en m&aacute;s de 800 tiendas alrededor del mundo y ha ido creciendo paso a paso a un ritmo donde hemos sido capaces de divertirnos, ser innovadores y honestos a nuestra misi&oacute;n &#45; lo que a&uacute;n sigue siendo as&iacute;. RBLT se ha construido bajo las valores de lealtad, honestidad y amabilidad mientras nos mantenemos fieles a nosotros mismos y a nuestra misi&oacute;n. Valoramos la calidad sobre la cantidad y las relaciones sobre los negocios. Somos pacientes y creemos que buenas cosas llegan a aquellos que esperan.
+								RBLT está orientada internacionalmente – pensamos internacionalmente, pero estamos fundados en la tradición de la cultura del diseño danés. Esto se ve reflejado en nuestro proceso de diseño y en nuestro concepto, así como en nuestro internacional enfoque de negocios. Hoy en día RBLT está representada en más de 800 tiendas alrededor del mundo y ha ido creciendo paso a paso a un ritmo donde hemos sido capaces de divertirnos, ser innovadores y honestos a nuestra misión – lo que aún sigue siendo así. RBLT se ha construido bajo las valores de lealtad, honestidad y amabilidad mientras nos mantenemos fieles a nosotros mismos y a nuestra misión. Valoramos la calidad sobre la cantidad y las relaciones sobre los negocios. Somos pacientes y creemos que buenas cosas llegan a aquellos que espera.
 								</p>
 								<br>
 				    		</h2>
-				    		
+
+
 			    		</div>
 			    	</div>
 				</div>
-			</section>
-
+			</section>			
+		    <!-- MODAL DE CATALOGO DE PRODUCTOS -->
+			<div class="modal fade" id="modalcatalogo" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content" style="background-color:#000; color:white;">
+						<div class="modal-header" style="color:white;">
+							<button type="button" class="close" data-dismiss="modal" style="color:white;" aria-label="Close"><span aria-hidden="true">Cerrar &times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Cat&aacute;logo de productos</h4>
+						</div>
+						<div class="modal-body" style="color:white;" id="resultcatalogo">						
+						</div>
+						<div class="modal-footer" style="color:white;" id="resultcatalogo">		
+							<h5 class="text-right"><b>RBLT</b></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FIN MODAL CATALOGO DE PRODUCTOS -->
 			<section id="catalogo" class="secciones">
 				<div class="fondo" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#catalogo">
 			    	<div class="contenedor">						
 						<div class="contenido" data-bottom-top="opacity: 0" data-25p-top="opacity: 0" data-top="opacity: 1" data-anchor-target="#catalogo">
-							
-							<!-- LINEA 1 DE CATALOGO -->
+						<!-- LINEA 1 DE CATALOGO -->
 							<div class="row">
 								<center><h3 style="color:white; background-color:rgba(0,0,0,0.5); width:50%; height:50px; padding-top:10px;"><b>CATALOGO</b></h3></center><br>								
 								<div class="col-lg-4 col-md-4 col-sm-12">					
@@ -162,18 +180,36 @@
 								</div>
 							</div>						
 						<!--FIN CATALOGO-->
-
 						
 			    		</div>
 			    	</div>			    	
 			    </div>
 			</section>
-		
+			<script src="js/loadcatalogo.js"></script>		
 			<section id="contacto" class="secciones">				
 				<div class="fondo" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#contacto">
 			    	<div class="contenedor">
-						<div class="contenido" data-bottom-top="opacity: 0" data-25p-top="opacity: 0" data-top="opacity: 1" data-anchor-target="#contacto">	
-							<h2>CONTACTO</h2>			    		
+						<div class="contenido" data-bottom-top="opacity: 0" data-25p-top="opacity: 0" data-top="opacity: 1" data-anchor-target="#contacto">		
+				    		<div class="miform">
+								<center><h3><b>CONTACTO</b></h3>
+								<hr style="border: 3px solid #D65E5E; width: 15%; margin:5px;"></center>
+								<hr>
+					    		<form class="form">
+						        <div class="form-group">
+						          <label for="nombre">Nombre:</label><input type="text" name="nombre" class="form-control" placeholder="Nombre completo">
+						        </div>
+						        <div class="form-group">
+						          <label for="email">Email:</label><input type="mail" name="email" required class="form-control" placeholder="Email (Requerido)">
+						        </div>
+						        <div class="form-group">
+						          <label for="mensaje">Mensaje:</label><textarea class="form-control" placeholder="Mensaje"></textarea>
+						        </div>
+						        <center><button type="submit" class="btn btn-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enviar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></center>
+						      </form>
+							  <hr>
+							  <p style="text-align:right; color:#000;">RBLT</p>
+					      </div>
+
 			    		</div>
 			    	</div>			    	
 			    </div>
